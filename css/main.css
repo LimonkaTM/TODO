@@ -11,6 +11,7 @@ body{
   font-family: 'Ubuntu', sans-serif;
   font-size: 16px;
   font-weight: 400;
+  -webkit-font-smoothing: antialiased;
   background-color: #ffbebe;
 }
 .main{
@@ -54,9 +55,15 @@ body{
   cursor: pointer;
   padding: 0;
 }
-.button svg{
-  display: table-cell;
-  vertical-align: middle;
+.button-todo-add{
+  width: 2.5em;
+  height: 2.5em;
+  background: url(../img/plus.svg) center/cover no-repeat;
+}
+.button-todo-delete{
+  width: 1.5em;
+  height: 1.5em;
+  background: url(../img/minus.svg) center/cover no-repeat;
 }
 .todos{
   max-width: 55%;

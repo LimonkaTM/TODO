@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Simple TODO">
   <title>TODO</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
@@ -15,23 +16,17 @@
   <main class="main">
     <h1 class="title">TODO List</h1>
     <form class="form-todo" action="#">
-      <input class="input-todo" type="text" placeholder="Введите задачу" tabindex="1" onkeypress="checkKeyPrassed(event);">
-      <button class="button button-todo-add" type="button" tabindex="2" >
-        <svg fill="#000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="2.5em" height="2.5em">
-          <path d="M 12 2 C 6.4889971 2 2 6.4889971 2 12 C 2 17.511003 6.4889971 22 12 22 C 17.511003 22 22 17.511003 22 12 C 22 6.4889971 17.511003 2 12 2 z M 12 4 C 16.430123 4 20 7.5698774 20 12 C 20 16.430123 16.430123 20 12 20 C 7.5698774 20 4 16.430123 4 12 C 4 7.5698774 7.5698774 4 12 4 z M 11 7 L 11 11 L 7 11 L 7 13 L 11 13 L 11 17 L 13 17 L 13 13 L 17 13 L 17 11 L 13 11 L 13 7 L 11 7 z"/>
-        </svg>
-      </button>
+      <input class="input-todo" type="text" placeholder="Введите задачу" tabindex="0" aria-label="Введите текст задачи" autofocus>
+      <button class="button button-todo-add" type="button" name="todo-adder" tabindex="0" aria-label="Добавить задачу"></button>
     </form>
     <!-- /.form-todo -->
     <div class="todos">
 
-      <!-- JS code which create goal -->
-      
     </div>
     <!-- /.todos -->
   </main>
   <!-- /.main -->
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
