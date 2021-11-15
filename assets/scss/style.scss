@@ -1,0 +1,42 @@
+@import ".colors";
+
+:root {
+  font-size: 16px;
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+  &::after, &::before{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  background-color: $backgroundBody;
+}
+
+@import ".main", ".form-todo";
+
+.button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+.form-todo__button-todo-add {
+  width: 2.5em;
+  height: 2.5em;
+  background: url(../img/plus.svg) center/cover no-repeat;
+}
+.todo__button-todo-delete {
+  width: 1.5em;
+  height: 1.5em;
+  background: url(../img/minus.svg) center/cover no-repeat;
+}
+
+@import ".todos", ".todo";

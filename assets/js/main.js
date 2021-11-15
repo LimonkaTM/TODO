@@ -1,5 +1,5 @@
-const $inputTodo = document.querySelector('.input-todo');
-const $btnTodoAdd = document.querySelector('.button-todo-add');
+const $inputTodo = document.querySelector('.form-todo__input-todo');
+const $btnTodoAdd = document.querySelector('.form-todo__button-todo-add');
 const $todos = document.querySelector('.todos');
 const $main = document.querySelector('.main');
 const arr = localStorage.getItem('goals') === null ? [] : JSON.parse(localStorage.getItem('goals'));
@@ -11,10 +11,11 @@ const renderElementsFromLocalStorage = (arr) => {
     const $buttonTodoDelete = document.createElement('button');
 
     $todo.classList.add('todo')
-    $todoText.classList.add('todo-text')
+    $todoText.classList.add('todo__text')
     $buttonTodoDelete.classList.add('button')
-    $buttonTodoDelete.classList.add('button-todo-delete')
+    $buttonTodoDelete.classList.add('todo__button-todo-delete')
     $buttonTodoDelete.name = 'todo-deletor';
+    $buttonTodoDelete.tabIndex = '0';
     $buttonTodoDelete.dataset.id = item.id;
     
     $todoText.innerText = item.goalText;
@@ -38,10 +39,11 @@ const createElement = (goalText) => {
   const counter = arr.length; 
 
   $todo.classList.add('todo')
-  $todoText.classList.add('todo-text')
+  $todoText.classList.add('todo__text')
   $buttonTodoDelete.classList.add('button')
-  $buttonTodoDelete.classList.add('button-todo-delete')
+  $buttonTodoDelete.classList.add('todo__button-todo-delete')
   $buttonTodoDelete.name = 'todo-deletor';
+  $buttonTodoDelete.tabIndex = '0';
   $buttonTodoDelete.dataset.id = counter;
   
   $todoText.innerText = goalText;

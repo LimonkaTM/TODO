@@ -1,0 +1,19 @@
+.form-todo{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.1em;
+  margin-bottom: 2rem;
+
+  .form-todo__input-todo {
+    font-size: 1em;
+    padding: .5rem .6rem;
+    margin-right: .5rem;
+    border: .15em solid $borderInput;
+    border-radius: .3em;
+    width: 35vw;
+  }
+}

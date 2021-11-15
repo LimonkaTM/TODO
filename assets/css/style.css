@@ -1,90 +1,105 @@
-:root{
+:root {
   font-size: 16px;
 }
-*,
-*::before,
-*::after{
+
+* {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-body{
+
+*::after, *::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
   font-family: 'Ubuntu', sans-serif;
   font-size: 16px;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   background-color: #ffbebe;
 }
-.main{
+
+.main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
-.title{
+
+.main .main__title {
   font-weight: 700;
   margin-top: 1rem;
   margin-bottom: 3rem;
 }
-.form-todo{
+
+.form-todo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 1.1em;
   margin-bottom: 2rem;
 }
-.input-todo{
+
+.form-todo .form-todo__input-todo {
   font-size: 1em;
   padding: .5rem .6rem;
   margin-right: .5rem;
-  border: .15em solid #000;
+  border: 0.15em solid #000;
   border-radius: .3em;
   width: 35vw;
 }
+
 .button {
   border: none;
   background-color: transparent;
   cursor: pointer;
   padding: 0;
 }
-.button-todo-add{
+
+.form-todo__button-todo-add {
   width: 2.5em;
   height: 2.5em;
   background: url(../img/plus.svg) center/cover no-repeat;
 }
-.button-todo-delete{
+
+.todo__button-todo-delete {
   width: 1.5em;
   height: 1.5em;
   background: url(../img/minus.svg) center/cover no-repeat;
 }
-.todos{
+
+.todos {
   max-width: 55%;
 }
-.todo{
+
+.todo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: rgb(248, 255, 145);
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: #f8ff91;
   margin: auto;
   padding: 1rem;
   border-radius: .8rem;
   margin-bottom: 1rem;
 }
-.todo-text{
+
+.todo .todo__text {
   margin: 0;
   margin-right: 1rem;
   text-align: justify;
